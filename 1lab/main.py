@@ -74,7 +74,7 @@ def find_codon_frequency(sequence, amino_acid_dict):
     codon_data = []
     sequence_string = ''.join(sequence).lower()
     sequence_triplets = [sequence_string[i:i + 3] for i in range(0, len(sequence_string), 3)]
-    codon_count = collections.Counter(amino_acid_dict.get(c, 'X') for c in sequence_triplets if c in amino_acid_dict)
+    codon_count = collections.Counter(amino_acid_dict.get(c, 'X') for c in sequence_triplets if c in amino_acid_dict and '*' not in amino_acid_dict.get(c, 'X'))
     codon_number = len(sequence_triplets)
     for codon in codon_count:
         codon_data.append((round(codon_count[codon] / codon_number, 4)))
@@ -93,11 +93,13 @@ def find_dicodon_frequency(sequence, amino_acid_dict):
          amino_acid_dict.get(sequence_dicodons[i][3:], 'X')) 
         for i in range(len(sequence_dicodons))
         if sequence_dicodons[i][:3] in amino_acid_dict and sequence_dicodons[i][3:] in amino_acid_dict
+        and '*' not in (amino_acid_dict.get(sequence_dicodons[i][:3], 'X'), amino_acid_dict.get(sequence_dicodons[i][3:], 'X'))
     ]
 
     dicodon_count = collections.Counter(dicodon_aa_pairs)
     all_possible_dicodons = [
         (aa1, aa2) for aa1 in amino_acid_dict.values() for aa2 in amino_acid_dict.values()
+        if '*' not in (aa1, aa2)
     ]
     dicodon_frequency_dict = {dicodon: 0 for dicodon in all_possible_dicodons}
     
@@ -107,6 +109,7 @@ def find_dicodon_frequency(sequence, amino_acid_dict):
         dicodon_frequency_dict[dicodon] = frequency
     dicodon_data = np.array(list(dicodon_frequency_dict.values()))
     return dicodon_data
+
 
 n = 64
 m = 4096
