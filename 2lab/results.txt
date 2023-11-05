@@ -1,0 +1,16 @@
+Read ID	Microorganism
+M00827:12:000000000-AEUNW:1:1101:21543:2685 1:N:0:6	Staphylococcus aureus strain BAA-1556_Catania_SCV chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:20192:2848 1:N:0:6	Staphylococcus aureus strain BAA-1556_Catania_SCV chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:20889:3446 1:N:0:6	Staphylococcus aureus strain BAA-1556_Catania_SCV chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:12898:3746 1:N:0:6	Staphylococcus aureus strain SA73_2 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:23128:3788 1:N:0:6	Escherichia coli strain JCL301 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:11683:2509 1:N:0:6	Escherichia coli str. K-12 substr. MG1655 strain K-12 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:14568:2958 1:N:0:6	Escherichia coli str. K-12 substr. MG1655 strain K-12 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:13276:3014 1:N:0:6	Escherichia coli strain JCL301 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:15296:3158 1:N:0:6	Escherichia coli strain JCL301 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:11742:3950 1:N:0:6	Escherichia coli strain JCL301 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:18070:3392 1:N:0:6	Thermus thermophilus HB8_001 DNA, complete genome
+M00827:12:000000000-AEUNW:1:1101:14615:4214 1:N:0:6	Thermus thermophilus HB8_001 DNA, complete genome
+M00827:12:000000000-AEUNW:1:1101:23350:4251 1:N:0:6	Thermus thermophilus HB8_001 DNA, complete genome
+M00827:12:000000000-AEUNW:1:1101:11574:4514 1:N:0:6	Thermus thermophilus HB27 chromosome, complete genome
+M00827:12:000000000-AEUNW:1:1101:9274:5136 1:N:0:6	Thermus thermophilus HB27 chromosome, complete genome
